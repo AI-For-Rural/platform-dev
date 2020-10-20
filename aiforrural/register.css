@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+nav {
+    background: linear-gradient(to right, rgba(253,137,215,1) 0%, rgba(252,236,252,1) 0%, rgba(251,166,225,1) 0%, rgba(125,167,214,1) 16%, rgba(125,167,214,1) 85%, rgba(116,153,204,1) 100%);
+}
+
+a.navbar-brand ul {
+    list-style-type: none;
+    color: #fff;
+}
+
+a.navbar-brand ul li p {
+    font-size: 22px;
+    font-weight: 200;
+}
+
+div.register_input {
+    padding: 28px;
+    border: 2px solid #efefef;
+    border-radius: 10px;
+    margin-top: 56px;
+}
+
+label.form-label {
+    color: #a6a6a6;
+}
+
+.form-control {
+    border: 1px solid #a6a6a6 !important;
+    border-radius: 0px !important;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+    outline: none;
+}
+
+.form-control.is-invalid, .was-validated .form-control:invalid {
+    border-color: #dc3545 !important;
+}
+
+button.register {
+    width: 100%;
+    background-color: #323ca8;
+    height: 7%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    border-radius: 0;
+    transition: 0.5s;
+}
+
+button.register:hover {
+    color: #323ca8;
+    background-color: #fff;
+    box-shadow: none;
+}
+
+button.register:focus {
+    color: #323ca8;
+    background-color: #fff;
+    box-shadow: none;
+}
+
+a.login {
+    width: 100%;
+    color: #323ca8;
+    height: 7%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 0;
+    margin-bottom: 50px;
+    padding-top: 15px;
+    transition: 0.5s;
+}
+
+a.login:hover {
+    background-color: #323ca8;
+    color: #fff;
+    box-shadow: none;
+}
+
+a.login:focus {
+    background-color: #323ca8;
+    color: #fff;
+    box-shadow: none;
+}
+
+div.footer-info p {
+    color: #a6a6a6;
+}
+
+div.footer-info p a {
+    text-decoration: none;
+    color:  #323ca8;
+}
+
+footer.footer {
+    margin-top: 69px;
+}
+
+
+/* Login Styles */
+.container i {
+    margin-right: 17px;
+    margin-top: -27px;
+    float: right;
+    cursor: pointer;
+}
+
+p.forgot {
+    display: inline-block;
+    float: right;
+}
+
+p.forgot a {
+    text-decoration: none;
+    color:  #323ca8;
+}
+
+.form-check-input {
+    border: 1px solid  #a6a6a6 !important;
+}
+
+label.form-check-label {
+    color:  #a6a6a6 !important;
+}
+
+/** Login Styles ends here **/
+
+
+/** Media queries **/
+@media (min-width: 992px) {
+    
+    div.register_input {
+        width: 692px;
+    }
+
+    .offset-lg-4 {
+        margin-left: 24.333333% !important;
+    }
+
+    a#description {
+        margin-left: 339px;
+    }
+
+    a#brand {
+        margin-right: 291px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 556px) {
+    
+    nav {
+        background: rgba(125,167,214,1) !important;
+    }
+    
+    nav div.container-fluid {
+        text-align: center;
+        display: block !important;
+    }
+}

@@ -1,0 +1,97 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In - AIForRural</title>
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+        integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light">
+            <div class="container-fluid">
+                <a id="description" class="navbar-brand">
+                    <ul>
+                        <li>
+                            <h1>Sign Up</h1>
+                        </li>
+                        <li>
+                            <p>Create An Account</p>
+                        </li>
+                    </ul>
+                </a>
+                <a id="brand" class="navbar-brand" href="#">
+                    <img class="img-fluid" src="assets/images/ai_logo.png" alt="Logo">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 offset-lg-4">
+                    <div class="register_input">
+                        <form action="#" method="post" class="needs-validation" novalidate>
+                            <div class="mb-4">
+                                <label for="business_email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="business_email" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid email.
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label for="Password" class="form-label">Password</label> <p class="forgot"><a href="#">Forgot Password?</a></p>
+                                <input type="password" class="form-control" id="Password" required>
+                                    <i class="far fa-eye" id="togglePassword"></i>
+                                <div class="invalid-feedback">
+                                    Please enter your password.
+                                </div>
+                            </div>
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" value="" id="Remember">
+                                <label class="form-check-label" for="Remember">
+                                    Remember Me
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary text-center register">Sign In</button>
+                        </form>
+
+                        <div class="register-info">
+                            <p class="text-center"><a style="color:  #a6a6a6;" href="#">Get a magic link for Passwordless login</a></p>
+                            <hr style="margin-top: 26px;">
+                            <p class="text-center">New to AIFR ?</p>
+                            <a style="padding-top: 6px;" class="btn btn-primary text-center login" href="register.html">Create Account</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="footer-info">
+                <p>By clicking 'Sign In', you agree to our 
+                    <a href="#">Privacy Policy</a> and 
+                    <a href="#">Terms of use.</a>
+                </p>
+                <p>&copy; 2020. AI For Rural. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
+        integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous">
+    </script>
+    <script src="login.js"></script>
+</body>
+
+</html>
