@@ -6,7 +6,7 @@ import Typography from "@material-ui/core/Typography";
 const QuickActions = () => {
   return (
     <Box>
-      <Typography> App Quick Action</Typography>{" "}
+      <Typography> </Typography>{" "}
     </Box>
   );
 };
