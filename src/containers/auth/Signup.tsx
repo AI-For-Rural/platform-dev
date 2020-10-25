@@ -4,6 +4,7 @@ import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import { useHistory } from "react-router-dom";
 import Main from "../Main";
+import AccountWrap from "./AccountWrap";
 import "./Sign_bar.css";
 
 const Signup = () => {
@@ -11,24 +12,7 @@ const Signup = () => {
   return (
     <Box>
         <Main />
-
-      <div>
-        <header>
-        <nav className="navbar navbar-light">
-            <div className="container-fluid">
-                <a id="description" href="#!" className="navbar-brand">
-                    <ul>
-                        <li><h1>Sign Up</h1></li>
-                        <li><p>Create An Account</p></li>
-                    </ul>
-                </a>
-                <a id="brand" className="navbar-brand" href="#!">
-                    <img className="img-fluid" src="https://aifr-platform.netlify.app/static/media/logo-1.343afc1b.svg" alt="Logo" />
-                </a>
-            </div>
-        </nav>
-      </header>
-      </div>
+        <AccountWrap />
     <Box
       display="flex"
       justifyContent="center"
@@ -36,7 +20,6 @@ const Signup = () => {
       paddingY={10}
       bgcolor="#f7f7f7"
       width="100%"
-      className="container-fluid"
     >
     
       <form noValidate autoComplete="off">

@@ -6,6 +6,7 @@ import { useHistory } from "react-router-dom";
 import Checkbox from "@material-ui/core/Checkbox";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Main from "../Main";
+import AccountWrap from "./AccountWrap";
 import "./Sign_bar.css";
 
 const Signin = () => {
@@ -19,24 +20,7 @@ const Signin = () => {
 
     <Box>
        <Main />
-
-      <div>
-        <header>
-          <nav className="navbar navbar-light">
-            <div className="container-fluid">
-                <a id="description" href="#!" className="navbar-brand">
-                    <ul>
-                        <li><h1>Sign Up</h1></li>
-                        <li><p>Create An Account</p></li>
-                    </ul>
-                </a>
-                <a id="brand" className="navbar-brand" href="#!">
-                    <img className="img-fluid" src="https://aifr-platform.netlify.app/static/media/logo-1.343afc1b.svg" alt="Logo" />
-                </a>
-            </div>
-          </nav>
-        </header>
-      </div>
+       <AccountWrap />
 
     <Box
       display="flex"
