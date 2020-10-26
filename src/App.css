@@ -1,38 +1,62 @@
-.App {
+.root{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  opacity: 1;
   text-align: center;
+  border:1px solid #EDEDED;
+}
+.main-box{
+  margin-top: -60px;
+  margin-bottom: -60px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  background: transparent linear-gradient(262deg, #43C0EC 0%, #1F64B490 77%, #C71489A0 100%) 0% 0% no-repeat padding-box;
+  color:#FFFFFF;
+  font-size: 28px!important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.headerTitle{
+  display: inline-flex;
+  margin-left: 50px;
+  font-size: large;
+  margin-top: 30px;
+}
+.titleLogo{
+  text-align: left;
+  margin-top: 10px;
+  font: normal normal bold 46px/44px Roboto;
+  letter-spacing: 0px;
+  line-height: 99% !important;
+  color: #FFFFFF;
+  font-size: 24px !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sign-footer-message{
+  text-align: center;
+  margin-top: -100px;
+  letter-spacing: 0px;
+  line-height: 95% !important;
+  font-size: 12px !important;
 }
 
-.App-link {
-  color: #61dafb;
+.forget-password{
+  text-align: right;
+  letter-spacing: 0px;
+  padding:10px;
+  padding-bottom: 0px;
+  margin-bottom: -10px;
+  line-height: 95% !important;
+  font-size: 12px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.magic-link{
+  text-align: center;
+  letter-spacing: 0px;
+  line-height: 95% !important;
+  font-size: 12px !important;
+}
+
+.titleheaders{
+  margin-top: -20px;
+  display: block;
 }

@@ -1,12 +1,15 @@
 import React from "react";
 import Box from "@material-ui/core/Box";
+import Link from '@material-ui/core/Link';
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import { useHistory } from "react-router-dom";
+import AuthLayouts from '../../layouts/AuthLayout';
 
 const Signup = () => {
   const history = useHistory();
   return (
+  <AuthLayouts title="Sign Up" subtitle="Create an Account">
     <Box
       display="flex"
       justifyContent="center"
@@ -99,8 +102,12 @@ const Signup = () => {
             </Box>
           </Box>
         </Box>
+        <span className="sign-footer-message">By clicking Sign in you agree to our <Link>Privacy Policy</Link> and <Link>Terms of Use</Link>
+        <br/>
+        © 2020 AI for Rural. All rights reserved.</span>
       </form>
     </Box>
+    </AuthLayouts>
   );
 };
 
