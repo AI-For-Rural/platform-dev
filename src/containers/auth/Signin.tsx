@@ -2,9 +2,11 @@ import React from "react";
 import Box from "@material-ui/core/Box";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
+import Link from '@material-ui/core/Link';
 import { useHistory } from "react-router-dom";
 import Checkbox from "@material-ui/core/Checkbox";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
+import AuthLayouts from '../../layouts/AuthLayout';
 
 const Signin = () => {
   const [checked, setChecked] = React.useState(false);
@@ -14,13 +16,14 @@ const Signin = () => {
     setChecked(event.target.checked);
   };
   return (
+  <AuthLayouts title="Sign In">
     <Box
       display="flex"
       justifyContent="center"
       alignItems="center"
       paddingY={10}
-      bgcolor="#f7f7f7"
       width="100%"
+      className="main-box"
     >
       <form noValidate autoComplete="off">
         <Box
@@ -40,7 +43,7 @@ const Signin = () => {
             size="small"
             placeholder="you@company.com"
           />
-
+          <span className="forget-password"><Link>Forget password</Link> </span> 
           <TextField
             id="outlined-basic"
             label="Password"
@@ -49,8 +52,9 @@ const Signin = () => {
             size="small"
             type="password"
           />
+         
 
-          <Box>
+          <Box style={{textAlign:'left'}}>
             <FormControlLabel
               control={
                 <Checkbox
@@ -62,8 +66,7 @@ const Signin = () => {
               label="Remember Me"
             />
           </Box>
-
-          <Box py={4}>
+          <Box py={2}>
             <Button
               variant="contained"
               color="primary"
@@ -72,7 +75,9 @@ const Signin = () => {
             >
               Sign in
             </Button>
-
+            <br/>
+            <br/>  
+            <span className="magic-link"> <Link>Get a magic link for Passwordless login</Link></span>
             <Box
               py={2}
               display="flex"
@@ -87,7 +92,7 @@ const Signin = () => {
               <Box height={1.4} width="25%" bgcolor="rgba(0,0,0,0.13)" />
             </Box>
 
-            <Box py={2}>
+            <Box py={1}>
               <Button
                 variant="outlined"
                 color="primary"
@@ -99,8 +104,12 @@ const Signin = () => {
             </Box>
           </Box>
         </Box>
+        <span className="sign-footer-message">By clicking Sign in you agree to our <Link>Privacy Policy</Link> and <Link>Terms of Use</Link>
+        <br/>
+        © 2020 AI for Rural. All rights reserved.</span>
       </form>
     </Box>
+   </AuthLayouts>
   );
 };
 

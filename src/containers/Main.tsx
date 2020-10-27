@@ -13,7 +13,7 @@ import ExpandMore from "@material-ui/icons/ExpandMore";
 import SearchIcon from "@material-ui/icons/Search";
 
 import Avatar from "@material-ui/core/Avatar";
-import { QuickActions } from "../components";
+import QuickActions from "../components/QuickActions";
 
 const mainMenu = [
   { value: "people", label: "People & Partners" },
